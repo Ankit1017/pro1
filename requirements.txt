@@ -3,7 +3,6 @@ atomicwrites==1.4.0
 backports.weakref==1.0.post1
 bkcharts==0.2
 brotlipy==0.7.0
-clyent==1.2.2
 comtypes==1.1.10
 conda==22.9.0
 conda-build==3.22.0

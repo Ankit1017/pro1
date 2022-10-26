@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+            maximum-scale=1.0"/>
+        <title>pro1</title>
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+         <link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+
+    <body>
+        <nav class="light-blue lighten-1" role="navigation">
+            <div class="nav-wrapper container"><a id="logo-container" href="#"
+                    class="brand-logo">Friend</a>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i
+                        class="material-icons">menu</i></a>
+            </div>
+        </nav>
+
+
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+                <br><br>
+                <h1 class="header center orange-text">Is Your
+                    Friend Chutiya ?</h1>
+                <div class="row center">
+                    <h5 class="header col s12 light">Fill some required data..
+                        <br>
+                    </h5>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s4">
+                        <label for="first_name"><b>Name</b></label>
+                        <br>
+                        <input id="first_name"
+                            name='name1'type="text"
+                            class="validate">
+                    </div>
+                    <form action='/predict' method="POST" class="col s12">
+                        <div class="row">
+                            <div class="input-field col s4">
+
+                                <label for="1_name"><b>Age</b></label>
+                                <br><br>
+                                <input id="1_name" name="age" type="text"
+                                    class="validate">
+
+                            </div>
+                            <div class="input-field col s4">
+
+                                <label for="2_name"><b>How many Studying hours ?</b></label>
+                                <br><br>
+                                <input id="2_name" name="hrs" type="text"
+                                    class="validate">
+
+                            </div>
+                            <div class="input-field col s4">
+                                
+                                <label for="3_name"><b>Is the person speaks any abusive word ?</b></label>
+                                <br><br>
+                                <input id="3_name" name="g" type="text"
+                                    class="validate">
+
+                            </div>
+                            <div class="input-field col s4">
+                                
+                                <label for="4_name"><b>Is the preson in relationship ?</b></label>
+                                <br><br>
+                                <input id="4_name" name="rel" type="text"
+                                    class="validate">
+
+                            </div>
+                        </div>
+
+                        <div class="row center">
+
+                            <button type="submit" class="btn-large waves-effect
+                                waves-light orange">Predict</button>
+                        </div>
+                    </form>
+                </div>
+
+                <br><h4 align="center"<b>{{pred}}</b></h4>
+            <br>
+
+        </div>
+    </div>
+
+
+        <footer class="page-footer orange">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">For Contacting us send us a mail on</h5>
+                        <a class="white-text" href="#!">....</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+<!-- 
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src=".js/materialize.js"></script>
+        <script src="js/init.js"></script>
+
+    </body>
+</html>

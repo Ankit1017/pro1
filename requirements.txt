@@ -8,7 +8,6 @@ constantly==15.1.0
 cssselect==1.1.0
 cytoolz==0.11.0
 daal4py==2021.6.0
-datashape==0.5.4
 et-xmlfile==1.1.0
 fonttools==4.25.0
 gunicorn==20.1.0

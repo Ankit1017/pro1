@@ -21,9 +21,9 @@ def predict():
     print(prediction)
     output='{0:.{1}f}'.format(prediction[0], 2)
     if output>str(0.5):
-        return render_template('home.html',pred='Your Friend is in Danger.\nProbability of Chutiyaness is {}'.format(output),bhai="kuch karna hain iska ab?")
+        return render_template('home.html',pred='Your Friend is in Danger.\nProbability of Ch*tiyaness is {}'.format(output),bhai="kuch karna hain iska ab?")
     else:
-        return render_template('home.html',pred='Your Friend is not in Danger.\nProbability of Chutiyaness is {}'.format(output),bhai="Your Friend is Safe for now")
+        return render_template('home.html',pred='Your Friend is not in Danger.\nProbability of Ch*tiyaness is {}'.format(output),bhai="Your Friend is Safe for now")
 
 
 if __name__ == '__main__':

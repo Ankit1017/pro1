@@ -17,7 +17,7 @@ def predict():
     final=[np.array(int_features)]
     # print(int_features)
     # print(final)
-    prediction=model.predict(final)+0.4
+    prediction=model.predict(final)
     print(prediction)
     output='{0:.{1}f}'.format(prediction[0], 2)
     if output>str(1):

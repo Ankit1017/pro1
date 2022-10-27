@@ -7,7 +7,6 @@ comtypes==1.1.10
 constantly==15.1.0
 cssselect==1.1.0
 cytoolz==0.11.0
-daal4py==2021.6.0
 et-xmlfile==1.1.0
 fonttools==4.25.0
 gunicorn==20.1.0
@@ -25,11 +24,9 @@ pyasn1-modules==0.2.8
 pycosat==0.6.3
 pycurl==7.45.1
 PyDispatcher==2.0.5
-pyls-spyder==0.4.0
 pytest==7.1.2
 python-lsp-jsonrpc==1.0.0
 PyYAML==6.0
-queuelib==1.5.0
 scipy==1.9.1
 statsmodels==0.13.2
 click==7.1.2

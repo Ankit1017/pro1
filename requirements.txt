@@ -44,4 +44,4 @@ MarkupSafe==1.1.1
 Werkzeug==1.0.1
 numpy==1.23.4 
 pandas==0.25.3
-scikit-learn==0.20
+scikit-learn==1.1.2

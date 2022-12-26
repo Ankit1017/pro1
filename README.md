@@ -16,7 +16,7 @@ This repo is to test the deploy to Vercel
 virtualenv ~/.ve/vercel
 source ~/.ve/vercel/bin/activate
 pip install -r requirements.txt
-FLASK_APP=index.py flask run
+FLASK_APP=app.py flask run
 
 # 🚀 go to http://localhost:5000
 ```
